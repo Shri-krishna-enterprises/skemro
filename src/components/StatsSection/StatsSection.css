@@ -1,0 +1,25 @@
+.stats-section{
+    background:#111827;
+    color:white;
+}
+
+.stats-grid{
+    display:center;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.stat-card{
+    text-align:center;
+    padding: 1px;
+}
+
+.stat-card h2{
+    color:#D4A017;
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    font-size:18px;
+}

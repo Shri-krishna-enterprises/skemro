@@ -1,0 +1,37 @@
+.industries-section{
+    background:#f8f8f8;
+}
+
+.industries-grid{
+    margin-top:50px;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.industry-card{
+    background:white;
+    height:180px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.industry-card:hover{
+    background:#111827;
+    color:white;
+    transform:translateY(-8px);
+}
+
+.industry-card h3{
+    font-size:22px;
+    text-align:center;
+}

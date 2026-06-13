@@ -1,0 +1,24 @@
+.trusted-industries{
+    padding:100px 0;
+}
+
+.industry-badges{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:40px;
+}
+
+.industry-badges div{
+    background:#f8f8f8;
+    padding:25px;
+    text-align:center;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.industry-badges div:hover{
+    background:#D4A017;
+    color:white;
+}

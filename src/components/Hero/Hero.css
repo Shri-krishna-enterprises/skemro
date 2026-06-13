@@ -1,0 +1,86 @@
+.hero{
+    height:700px;
+    position:relative;
+
+    background:
+    linear-gradient(
+      rgba(0,0,0,.65),
+      rgba(0,0,0,.65)
+    ),
+    url("https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1");
+
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+}
+
+.hero-tag{
+    color:#D4A017;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.hero-content h1{
+    font-size:72px;
+    line-height:1.05;
+    max-width:750px;
+    margin:20px 0;
+}
+
+.hero-content p{
+    max-width:650px;
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.primary-btn{
+    background:#D4A017;
+    color:white;
+    padding:14px 28px;
+    border-radius:4px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.secondary-btn{
+    border:2px solid white;
+    color:white;
+    padding:14px 28px;
+    border-radius:4px;
+    text-decoration:none;
+}
+@media(max-width:768px){
+
+    .hero{
+        height:auto;
+        min-height:600px;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:38px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}

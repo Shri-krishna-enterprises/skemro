@@ -1,0 +1,18 @@
+.features-bar{
+    background:#111827;
+    color:white;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    padding:30px 60px;
+}
+
+.feature{
+    text-align:center;
+}
+
+.feature h3{
+    color:#D4A017;
+    margin-bottom:10px;
+}
