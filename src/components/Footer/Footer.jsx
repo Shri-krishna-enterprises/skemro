@@ -49,9 +49,9 @@ function Footer() {
 
           <h3>Contact</h3>
 
-          <p>+91 XXXXX XXXXX</p>
+          <p>+91 9034958355</p>
 
-          <p>info@skeindia.com</p>
+          <p>Skenoida@outlook.com</p>
 
           <p>India</p>
 
