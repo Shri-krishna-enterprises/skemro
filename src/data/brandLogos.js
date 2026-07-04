@@ -12,7 +12,7 @@ const brandLogos = {
 
   "Hindustan Petroleum":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDI4bo-n8iiN3AHwg8ZRtMKXpwc0bNuuXLpg&s",
   "Shell":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQymVrLS-bohhndriu8wQKb3g0z810HJ34sPA&s",
-  "BP":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT42uPTRURRDN9c2jROTqz8PwWp_El6-QVCIg&s",
+  "Bharat Petroleum":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Bharat_Petroleum_logo.svg/960px-Bharat_Petroleum_logo.svg.png",
   "Mobil":"https://substack-post-media.s3.amazonaws.com/public/images/d9453bba-97ca-4474-9bdb-e9c47dc9a030_1000x714.jpeg",
 
   "NTN":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHkauibvWDQ5FyJl-9CkaMyRMvhRMyHHWIOA&s",

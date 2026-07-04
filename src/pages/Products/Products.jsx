@@ -87,7 +87,7 @@ function Products() {
             <span>OUR BRANDS</span>
 
             <h2>
-              Authorized Brand Partners
+              Dealing in Multiple Brands
             </h2>
 
           </div>

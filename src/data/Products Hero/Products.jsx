@@ -26,7 +26,7 @@ function Products() {
           </h1>
 
           <p>
-            Authorized Brand Partners
+            Dealing in Multiple Brands
           </p>
 
         </div>
@@ -75,7 +75,7 @@ function Products() {
                   <h3>{brand}</h3>
 
                   <p>
-                    Authorized Brand Partner
+                    Dealing in Multiple Brands
                   </p>
 
                 </div>

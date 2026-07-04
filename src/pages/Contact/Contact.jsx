@@ -40,7 +40,7 @@ function Contact() {
 
               <h3>Email</h3>
 
-              <p>Skenoida@outlook.com </p>
+              <p>sales@skemro.com </p>
 
             </div>
 

@@ -1,7 +1,7 @@
 const brandsData = {
   "Abrasives": ["3M", "Cumi", "Norton", "Bosch"],
   "Appliances": ["Acer", "LG", "Samsung", "Almonard"],
-  "Oils & Lubricants": ["Hindustan Petroleum", "Shell", "BP", "Mobil"],
+  "Oils & Lubricants": ["Hindustan Petroleum", "Shell", "Bharat Petroleum", "Mobil"],
   "Bearings": ["NTN", "Gamet", "Nachi", "IKO", "Schneeberger"],
   "Transmission": ["Bonfiglioli", "Premium", "Fenner", "PIX"],
   "Chemical Reagents": ["Lewatit", "Dupont", "Pentair"],

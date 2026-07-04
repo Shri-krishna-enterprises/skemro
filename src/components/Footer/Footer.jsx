@@ -51,7 +51,7 @@ function Footer() {
 
           <p>+91 9034958355</p>
 
-          <p>Skenoida@outlook.com</p>
+          <p>sales@skemro.com</p>
 
           <p>India</p>
 
