@@ -17,25 +17,8 @@ function ContactSection() {
               team will respond as soon as possible.
             </p>
 
-            <div className="info-card">
-              <h4>Email</h4>
-              <p>sales@skemro.com</p>
-            </div>
 
-            <div className="info-card">
-              <h4>Business Hours</h4>
-              <p>Monday – Saturday</p>
-              <p>9:00 AM – 6:00 PM</p>
-            </div>
-
-            <div className="info-card">
-              <h4>Address</h4>
-              <p>
-                Your Office Address<br />
-                City, State, India
-              </p>
-            </div>
-
+            
           </div>
 
           <div className="contact-form">

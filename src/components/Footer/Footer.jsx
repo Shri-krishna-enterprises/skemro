@@ -25,7 +25,11 @@ function Footer() {
             sourcing solutions across multiple
             industries.
           </p>
-
+          <p>
+            All trademarks and logos are the property of their 
+            respective owners and are used solely to identify 
+            the products being sold.
+          </p>
         </div>
 
         <div className="footer-col">
@@ -47,12 +51,12 @@ function Footer() {
 
           <p>
             <FaEnvelope />
-            info@skemro.com
+            sales@skemro.com
           </p>
 
           <p>
             <FaMapMarkerAlt />
-            India
+            Sector 115 , Sorkha , Noida 201301 , India
           </p>
 
         </div>
