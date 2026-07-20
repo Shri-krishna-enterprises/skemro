@@ -1,0 +1,56 @@
+.product-sidebar{
+    position:sticky;
+    top:100px;
+}
+
+.sidebar-card{
+    background:#fff;
+    padding:25px;
+    border-radius:16px;
+    margin-bottom:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+    border:1px solid #ececec;
+}
+
+.sidebar-card h3{
+    color:#0B2341;
+    margin-bottom:18px;
+}
+
+.sidebar-card input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+}
+
+.sidebar-card button{
+    width:100%;
+    border:none;
+    background:#f5f5f5;
+    margin-bottom:10px;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+    text-align:left;
+    transition:.3s;
+}
+
+.sidebar-card button:hover{
+    background:#0B2341;
+    color:#fff;
+}
+
+.sidebar-card button.active{
+    background:#D4A017;
+    color:#fff;
+}
+
+@media(max-width:1100px){
+
+.product-sidebar{
+    position:static;
+}
+
+}

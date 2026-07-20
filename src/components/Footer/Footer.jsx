@@ -1,59 +1,73 @@
+// 
+import { Link } from "react-router-dom";
+import {
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaLinkedin,
+} from "react-icons/fa";
 import "./Footer.css";
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="footer">
 
-      <div className="container footer-grid">
+      <div className="footer-container">
 
-        <div>
+        <div className="footer-col">
 
-          <h2>Shri Krishna Enterprises</h2>
+          <h2>SKEMRO</h2>
 
           <p>
-            Trusted supplier of industrial products
-            and engineering solutions.
+            Your trusted partner for industrial
+            procurement, engineering products, and
+            sourcing solutions across multiple
+            industries.
           </p>
 
         </div>
 
-        <div>
+        <div className="footer-col">
 
           <h3>Quick Links</h3>
 
-          <ul>
-            <li>Home</li>
-            <li>Products</li>
-            <li>Industries</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/products">Products</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/brands">Brands</Link>
+          <Link to="/contact">Contact</Link>
 
         </div>
 
-        <div>
-
-          <h3>Products</h3>
-
-          <ul>
-            <li>Pipes</li>
-            <li>Flanges</li>
-            <li>Valves</li>
-            <li>Fittings</li>
-            <li>Fasteners</li>
-          </ul>
-
-        </div>
-
-        <div>
+        <div className="footer-col">
 
           <h3>Contact</h3>
 
-          <p>+91 9034958355</p>
+          <p>
+            <FaEnvelope />
+            info@skemro.com
+          </p>
 
-          <p>sales@skemro.com</p>
+          <p>
+            <FaMapMarkerAlt />
+            India
+          </p>
 
-          <p>India</p>
+        </div>
+
+        <div className="footer-col">
+
+          <h3>Follow Us</h3>
+
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin /> LinkedIn
+          </a>
 
         </div>
 
@@ -61,8 +75,10 @@ function Footer() {
 
       <div className="footer-bottom">
 
-        © 2020 Shri Krishna Enterprises.
-        All Rights Reserved.
+        <p>
+          © {year} SKEMRO Industrial Solutions. All
+          Rights Reserved.
+        </p>
 
       </div>
 

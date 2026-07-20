@@ -1,0 +1,20 @@
+.not-found{
+    min-height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.not-found h1{
+    font-size:80px;
+}
+
+.not-found a{
+    padding:12px 25px;
+    background:#0B2341;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}

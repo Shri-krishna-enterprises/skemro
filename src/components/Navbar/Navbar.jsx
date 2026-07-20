@@ -1,39 +1,71 @@
-import "./Navbar.css";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../assets/logo/logo.png";
+import "./Navbar.css";
+
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header className="navbar">
+      <div className="navbar-container">
 
-      <div className="logo-section">
-<img
-  src={logo}
-  alt="Shri Krishna Enterprises"
-/>
+        {/* Logo */}
+        <NavLink to="/" className="logo" onClick={closeMenu}>
+          <img
+            src={logo}
+            alt="SKEMRO Industrial Solutions"
+            className="logo-img"
+          />
+        </NavLink>
 
-        <div className="company-name">
-          <h3>Shri Krishna Enterprises</h3>
-        </div>
+        {/* Navigation */}
+        <nav className={menuOpen ? "nav-menu active" : "nav-menu"}>
+          <NavLink to="/" onClick={closeMenu}>
+            Home
+          </NavLink>
+
+          <NavLink to="/about" onClick={closeMenu}>
+            About
+          </NavLink>
+
+          <NavLink to="/products" onClick={closeMenu}>
+            Products
+          </NavLink>
+
+          <NavLink to="/services" onClick={closeMenu}>
+            Services
+          </NavLink>
+
+          <NavLink to="/brands" onClick={closeMenu}>
+            Brands
+          </NavLink>
+
+          <NavLink to="/contact" onClick={closeMenu}>
+            Contact
+          </NavLink>
+        </nav>
+
+        {/* Quote Button */}
+        <NavLink
+          to="/request-quote"
+          className="quote-btn"
+        >
+          Request Quote
+        </NavLink>
+
+        {/* Mobile Menu */}
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </button>
 
       </div>
-
-      <nav>
-
-        <NavLink to="/">Home</NavLink>
-
-        <NavLink to="/products">Products</NavLink>
-
-        <NavLink to="/industries">Industries</NavLink>
-
-        <NavLink to="/about">About Us</NavLink>
-
-
-      </nav>
-
-      <a href="/contact" className="quote-btn">
-        Contact Us
-      </a>
-
     </header>
   );
 }

@@ -1,31 +1,23 @@
 import Hero from "../../components/Hero/Hero";
-import FeaturesBar from "../../components/FeaturesBar/FeaturesBar";
-import ProductsSection from "../../components/ProductsSection/ProductsSection";
+import TrustIndicators from "../../components/TrustIndicators/TrustIndicators";
+import AboutSection from "../../components/AboutSection/AboutSection";
+import ProductCategories from "../../components/ProductCategories/ProductCategories";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
-import StatsSection from "../../components/StatsSection/StatsSection";
-
-import Testimonial from "../../components/Testimonial/Testimonial";
-import CTASection from "../../components/CTASection/CTASection";
-import ClientsSection from "../../components/ClientsSection/ClientsSection";
+import IndustriesServed from "../../components/IndustriesServed/IndustriesServed";
+import BrandsSection from "../../components/BrandsSection/BrandsSection";
+import ContactCTA from "../../components/ContactCTA/ContactCTA";
 
 function Home() {
   return (
     <>
       <Hero />
-
-      <FeaturesBar />
-
-      <ProductsSection />
-
+      <TrustIndicators />
+      <AboutSection />
+      <ProductCategories />
+      <BrandsSection />
+      <IndustriesServed />
       <WhyChooseUs />
-
-      <StatsSection />
-
-
-      <Testimonial />
-            <ClientsSection />
-      <CTASection />
-
+      <ContactCTA />
     </>
   );
 }

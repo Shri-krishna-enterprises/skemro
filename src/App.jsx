@@ -1,43 +1,54 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// import Navbar from "./components/Navbar/Navbar";
-// import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
-// import Home from "./pages/Home/Home";
-// import Products from "./pages/Products/Products";
-// import ProductDetails from "./pages/ProductDetails/ProductDetails";
-// import Industries from "./pages/Industries/Industries";
-// import About from "./pages/About/About";
-// import Contact from "./pages/Contact/Contact";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Products from "./pages/Products/Products";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import Services from "./pages/Services/Services";
+import Brands from "./pages/Brands/Brands";
+import Contact from "./pages/Contact/Contact";
+import RequestQuote from "./pages/RequestQuote/RequestQuote";
+import NotFound from "./pages/NotFound/NotFound";
 
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <Navbar />
-
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/products" element={<Products />} />
-//         <Route path="/products/:id" element={<ProductDetails />} />
-//         <Route path="/industries" element={<Industries />} />
-//         <Route path="/about" element={<About />} />
-//         <Route path="/contact" element={<Contact />} />
-//         <Route
-//   path="/products/:id"
-//   element={<ProductDetails />}
-// />
-//       </Routes>
-
-//       <Footer />
-//     </BrowserRouter>
-//   );
-// }
-
-// export default App;
-import Maintenance from "./pages/Maintenance/Maintenance";
+import "./App.css";
 
 function App() {
-  return <Maintenance />;
+  return (
+    <BrowserRouter>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/about" element={<About />} />
+
+        <Route path="/products" element={<Products />} />
+
+        <Route
+          path="/products/:id"
+          element={<ProductDetails />}
+        />
+
+        <Route path="/services" element={<Services />} />
+
+        <Route path="/brands" element={<Brands />} />
+
+        <Route path="/contact" element={<Contact />} />
+
+        <Route
+          path="/request-quote"
+          element={<RequestQuote />}
+        />
+
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
 export default App;

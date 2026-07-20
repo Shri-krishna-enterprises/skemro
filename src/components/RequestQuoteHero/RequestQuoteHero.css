@@ -1,0 +1,37 @@
+.quote-hero{
+    background:linear-gradient(rgba(11,35,65,.92),rgba(11,35,65,.92));
+    color:#fff;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.quote-hero-content{
+    max-width:850px;
+    margin:auto;
+}
+
+.quote-hero span{
+    color:#D4A017;
+    letter-spacing:2px;
+    font-weight:700;
+}
+
+.quote-hero h1{
+    font-size:52px;
+    margin:20px 0;
+}
+
+.quote-hero p{
+    max-width:720px;
+    margin:auto;
+    line-height:1.8;
+    color:#d7dde5;
+}
+
+@media(max-width:768px){
+
+.quote-hero h1{
+    font-size:34px;
+}
+
+}

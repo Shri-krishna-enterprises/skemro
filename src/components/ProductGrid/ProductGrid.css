@@ -1,0 +1,269 @@
+.product-grid-section{
+    width:90%;
+    max-width:1400px;
+    margin:80px auto;
+}
+
+.product-grid-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.product-grid-header h2{
+    font-size:42px;
+    color:#0B2341;
+    margin-bottom:20px;
+}
+
+.product-grid-header p{
+    width:70%;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+@media(max-width:1200px){
+
+.product-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+@media(max-width:900px){
+
+.product-grid-header p{
+    width:100%;
+}
+
+.product-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+.product-grid-header h2{
+    font-size:30px;
+}
+
+.product-grid{
+    grid-template-columns:1fr;
+}
+
+}
+.catalog-layout{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:30px;
+    align-items:start;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    gap:30px;
+}
+
+@media(max-width:992px){
+
+.catalog-layout{
+    grid-template-columns:1fr;
+}
+
+}
+.catalog-toolbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.catalog-toolbar p{
+    color:#555;
+    font-size:16px;
+}
+
+.catalog-toolbar select{
+    padding:12px 18px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    background:#fff;
+    cursor:pointer;
+}
+
+.empty-state{
+    grid-column:1/-1;
+    background:#fff;
+    padding:80px 30px;
+    text-align:center;
+    border-radius:16px;
+    border:1px solid #eee;
+}
+
+.empty-state h3{
+    color:#0B2341;
+    margin-bottom:15px;
+}
+
+.empty-state p{
+    color:#666;
+}
+
+.pagination{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:50px;
+}
+
+.page-btn{
+    width:45px;
+    height:45px;
+    border:none;
+    background:#fff;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+    border:1px solid #ddd;
+}
+
+.page-btn:hover{
+    background:#0B2341;
+    color:#fff;
+}
+
+.page-btn.active{
+    background:#D4A017;
+    color:#fff;
+    border-color:#D4A017;
+}
+.product-grid-section{
+    width:92%;
+    max-width:1500px;
+    margin:80px auto;
+}
+
+.product-grid-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.product-grid-header h2{
+    font-size:48px;
+    color:#0B2341;
+    margin-bottom:15px;
+}
+
+.product-grid-header p{
+    color:#666;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.catalog-layout{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:35px;
+    align-items:start;
+}
+
+.catalog-content{
+    width:100%;
+}
+
+.catalog-toolbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+    background:white;
+    padding:20px 25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+.catalog-toolbar h3{
+    color:#0B2341;
+}
+
+.catalog-toolbar select{
+    padding:12px 18px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    outline:none;
+    cursor:pointer;
+}
+
+.empty-state{
+    background:white;
+    padding:80px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+.pagination{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:40px;
+}
+
+.page-btn{
+    width:45px;
+    height:45px;
+    border:none;
+    background:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.page-btn:hover{
+    background:#0B2341;
+    color:white;
+}
+
+.page-btn.active{
+    background:#D4A017;
+    color:white;
+}
+
+@media(max-width:1100px){
+
+.catalog-layout{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.product-grid-header h2{
+    font-size:34px;
+}
+
+.catalog-toolbar{
+    flex-direction:column;
+    gap:15px;
+    align-items:flex-start;
+}
+
+.empty-state{
+    padding:50px 20px;
+}
+
+}

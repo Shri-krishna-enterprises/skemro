@@ -1,70 +1,75 @@
+import {
+  FaCheckCircle,
+  FaBoxes,
+  FaGlobe,
+  FaUsers,
+  FaHeadset,
+  FaShippingFast,
+} from "react-icons/fa";
 import "./WhyChooseUs.css";
-import { FaAward, FaTruck, FaUsers, FaTools } from "react-icons/fa";
+
+const features = [
+  {
+    icon: <FaCheckCircle />,
+    title: "Quality Assured Products",
+    desc: "We source products from trusted manufacturers to ensure reliability and consistent quality.",
+  },
+  {
+    icon: <FaGlobe />,
+    title: "Trusted Global Brands",
+    desc: "Access to a wide range of internationally recognized industrial brands.",
+  },
+  {
+    icon: <FaBoxes />,
+    title: "Bulk Supply",
+    desc: "Efficient procurement and timely supply for projects of every scale.",
+  },
+  {
+    icon: <FaShippingFast />,
+    title: "Fast Procurement",
+    desc: "Quick sourcing and delivery support to minimize project delays.",
+  },
+  {
+    icon: <FaUsers />,
+    title: "Industry Expertise",
+    desc: "Experienced team helping you select the right industrial products.",
+  },
+  {
+    icon: <FaHeadset />,
+    title: "Dedicated Support",
+    desc: "Professional customer support from inquiry to order completion.",
+  },
+];
 
 function WhyChooseUs() {
-  const features = [
-    {
-      icon: <FaAward />,
-      title: "Quality Products",
-      description: "Premium industrial products that meet industry standards."
-    },
-    {
-      icon: <FaTruck />,
-      title: "Timely Delivery",
-      description: "Efficient logistics and on-time project deliveries."
-    },
-    {
-      icon: <FaTools />,
-      title: "Wide Product Range",
-      description: "Complete industrial solutions under one roof."
-    },
-    {
-      icon: <FaUsers />,
-      title: "Customer Focus",
-      description: "Dedicated support and long-term business relationships."
-    }
-  ];
-
   return (
-    <section className="why-choose">
-
+    <section className="why-section">
       <div className="container">
 
-        <div className="section-header">
+        <div className="section-title">
+          <span>WHY CHOOSE SKEMRO</span>
 
-          <span>WHY CHOOSE US</span>
-
-          <h2>
-            Trusted Industrial Supply Partner
-          </h2>
+          <h2>Your Reliable Industrial Supply Partner</h2>
 
           <p>
-            We provide reliable products and professional service
-            to industries across India.
+            We combine quality products, trusted brands, and responsive
+            service to support your industrial procurement requirements.
           </p>
-
         </div>
 
         <div className="why-grid">
-
           {features.map((item, index) => (
             <div className="why-card" key={index}>
-
-              <div className="icon">
-                {item.icon}
-              </div>
+              <div className="why-icon">{item.icon}</div>
 
               <h3>{item.title}</h3>
 
-              <p>{item.description}</p>
-
+              <p>{item.desc}</p>
             </div>
           ))}
-
         </div>
 
       </div>
-
     </section>
   );
 }
