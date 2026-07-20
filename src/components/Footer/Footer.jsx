@@ -4,6 +4,7 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaLinkedin,
+  FaPhone,
 } from "react-icons/fa";
 import "./Footer.css";
 
@@ -48,6 +49,10 @@ function Footer() {
         <div className="footer-col">
 
           <h3>Contact</h3>
+          <p>
+            <FaPhone />   
+            +91 9034958355 
+          </p>
 
           <p>
             <FaEnvelope />
